@@ -225,10 +225,28 @@ span{
 }
 
 .menu_footer{
-    font-family: 'Poppins';
+    font-family: 'Poppins-regular';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 147.5%;
     color: #5E6282;
+}
+
+.titre_menu_footer{
+    font-family: 'Poppins-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 124.5%;
+    color: #080809;
+}
+
+.button_footer{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
