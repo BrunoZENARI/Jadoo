@@ -7,118 +7,127 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Jadoo</title>
 </head>
-<body>
-    <header>
-        <p><img src="./img/">Jadoo</p>
-        
-        <p>
-            <ul>
-                <li><a href="#page2">Les nouveautés</a></li>
-                <li><a href="#page3">Découvrir</a></li>
-                <li><a href="#page4">Commander</a></li>
-                <li><a href="#page5">Contactez-nous</a></li>
-            </ul>
-        </p>
-    </header>
+    <body>
+        <header class="conteneur-menu">               
+                    <img src="/img/logo_jadoo_1.svg" alt="logo" class="element-menu" id="logo1">
+                    <img src="/img/logo_jadoo_2.svg" alt="logo" class="element-menu" id="logo2">
+                    <nav class="element-menu">
+                        <a href="#page2">Les nouveautés</a>
+                        <a href="#page3">Découvrir</a>
+                        <a href="#page4">Commander</a>
+                        <a href="#page5">Contactez-nous</a>
+                    </nav>
+        </header>
 
-    <div>
-        <p class="p3">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
-        <h1>Bienvenue au restaurant Jadoo</h1>
-        <p class="petit_p">Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA.</p>
-        <button class="carte">Découvrir la carte</button>
-    </div>
-
-    <div>
-        <h4>DÉCOUVREZ</h4>
-        <h2>Les nouveautés Jadoo</h2>
-        
-        <p class="descriptif">Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"<br>        
-        Nouilles japonaises chaudes à base de farine de blé "Udon"<br>        
-        Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</p>
-        
-        <p class="descriptif_bold">California Tobiko</p>
-        <h6>Saumon, thon, mayonnaise</h6>        
-        
-        <p class="descriptif_bold">California Rolls</p>        
-        <h6>Saumon, avocat et mayonnaise</h6>        
-        
-        <p class="descriptif_bold">Ebi</p>        
-        <h6>Crevette, avocat, menthe, coriandre</h6>        
-        
-        <p class="descriptif_bold">Ikura Rolls</p>        
-        <h6>Oeufs de saumon</h6>
-        
-        <button class="carte">Découvrir la carte</button><br>
-        <button></button>
-    </div>
-
-    <div>
-        <h1>Un voyage gastronomique entre le Japon et la France...</h1>
-        <h5>Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</h5>
-    </div>
-
-    <div>
-        <h3>RAPIDE ET PRATIQUE</h3>
-        <h2 id="order"><span>Commandez</span> sur le site Jadoo</h2>
-        <a href="#UberEats" class="marque">UberEats</a><br>
-        <a href="#UberEats" class="sous_marque">Commandez tous vos plats depuis UberEats</a><br>
-        <a href="#Jadoo" class="marque">Jadoo.fr</a><br>
-        <a href="#Jadoo" class="sous_marque">Ou commandez en ligne sur le site officiel de Jadoo</a><br>
-        <p class="marque">Livraison ultra rapide</p>
-        <p class="sous_livraison">Soyez livré en 20 minutes maximum</p>
-        <button class="carte">Découvrir la carte</button>
-    </div>
-
-    <div>
-        <p class="rdv">PRENDRE RENDEZ-VOUS</p>
-        <p class="contact">Contactez-nous pour réserver au restaurant</p>
-        <p class="formulaire">Formulaire de contact</p>
-        <p class="consigne_formulaire">Remplissez le formulaire ci-dessous pour nous contacter</p>
-        <div class="champ">
-            <label for="Nom" >Nom</label> 
-            <input type="texte" id="Nom" placeholder="Nom">
-        </div>
-
-        <form method="post" action="form.php">
-            <div class="champ">
-                <label for="Prenom">Prénom</label> 
-                <input type="texte" id="Prenom" placeholder="Prénom">
+        <section class="principale">    
+            <div class="conteneur-principale">
+                    <p class="p3 element-principale">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
+                    <h1 class="element-principale">Bienvenue au restaurant Jadoo</h1>
+                    <p class="petit_p element-principale">Jadoo vous accueille dans son ambiance zen et épurée,<br> idéale pour découvrir ou redécouvrir la cuisine<br> gastronomique du Chef Junichi IIDA.</p>
+                    <button class="boutton-jaune">Découvrir la carte</button>
             </div>
-            <div class="champ">
-                <label for="mail">Adresse e-mail</label>
-                <input type="email" id="mail" placeholder="Monadressemail@gmail.com">
+        </section>
+
+        <section>
+            <div>
+                <h4>DÉCOUVREZ</h4>
+                <h2>Les nouveautés Jadoo</h2>
+                
+                <p class="descriptif">Boulettes de poulet au gingembre sauce sucrée salée "Tsukuné"<br>        
+                Nouilles japonaises chaudes à base de farine de blé "Udon"<br>        
+                Échine de porc panée à la japonaise "Tonkatsu-Teishoku"</p>
+                
+                <p class="descriptif_bold">California Tobiko</p>
+                <h6>Saumon, thon, mayonnaise</h6>        
+                
+                <p class="descriptif_bold">California Rolls</p>        
+                <h6>Saumon, avocat et mayonnaise</h6>        
+                
+                <p class="descriptif_bold">Ebi</p>        
+                <h6>Crevette, avocat, menthe, coriandre</h6>        
+                
+                <p class="descriptif_bold">Ikura Rolls</p>        
+                <h6>Oeufs de saumon</h6>
+                
+                <button class="carte">Découvrir la carte</button><br>
+                <button></button>
             </div>
-            <div class="champ">
-                <label for="Message">Message</label> 
-                <input type="textarea" id="Message" placeholder="Votre message / Demande de réservation">
+        </section>
+
+        <section class="chef">
+            <div class="inchef">
+                <img class="video" src="/img/visu_video.jpg" alt="video">
+                <h1>Un voyage gastronomique entre le Japon et la France...</h1>
+                <h5 >Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</h5>
             </div>
-            <div class="champ">
-                <input type="submit" value="Envoyer">
+        </section>
+
+        <section>
+            <div>
+                <h3>RAPIDE ET PRATIQUE</h3>
+                <h2 id="order"><span>Commandez</span> sur le site Jadoo</h2>
+                <a href="#UberEats" class="marque">UberEats</a><br>
+                <a href="#UberEats" class="sous_marque">Commandez tous vos plats depuis UberEats</a><br>
+                <a href="#Jadoo" class="marque">Jadoo.fr</a><br>
+                <a href="#Jadoo" class="sous_marque">Ou commandez en ligne sur le site officiel de Jadoo</a><br>
+                <p class="marque">Livraison ultra rapide</p>
+                <p class="sous_livraison">Soyez livré en 20 minutes maximum</p>
+                <button class="carte">Découvrir la carte</button>
             </div>
-        </form>
-    </div>
+        </section>
 
-    <footer>
-        <p><img src="./img/">Jadoo</p>
-        <p class="menu_footer">Un voyage gastronomique entre le Japon et la France</p>
+        <section>
+            <div>
+                <p class="rdv">PRENDRE RENDEZ-VOUS</p>
+                <p class="contact">Contactez-nous pour réserver au restaurant</p>
+                <p class="formulaire">Formulaire de contact</p>
+                <p class="consigne_formulaire">Remplissez le formulaire ci-dessous pour nous contacter</p>
+                <div class="champ">
+                    <label for="Nom" >Nom</label> 
+                    <input type="texte" id="Nom" placeholder="Nom">
+                </div>
 
-        <p class="titre_menu_footer">Restaurant</p>
+                <form method="post" action="form.php">
+                    <div class="champ">
+                        <label for="Prenom">Prénom</label> 
+                        <input type="texte" id="Prenom" placeholder="Prénom">
+                    </div>
+                    <div class="champ">
+                        <label for="mail">Adresse e-mail</label>
+                        <input type="email" id="mail" placeholder="Monadressemail@gmail.com">
+                    </div>
+                    <div class="champ">
+                        <label for="Message">Message</label> 
+                        <input type="textarea" id="Message" placeholder="Votre message / Demande de réservation">
+                    </div>
+                    <div class="champ">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </section>
 
-        <p class="menu_footer">Nouveautés</p>
+        <footer>
+            <p><img src="./img/">Jadoo</p>
+            <p class="menu_footer">Un voyage gastronomique entre le Japon et la France</p>
 
-        <p class="menu_footer">Découvrir</p>
+            <p class="titre_menu_footer">Restaurant</p>
 
-        <p class="menu_footer">Commander</p>
+            <p class="menu_footer">Nouveautés</p>
 
-        <p class="titre_menu_footer">Contact</p>
+            <p class="menu_footer">Découvrir</p>
 
-        <p class="menu_footer">Prendre RDV</p>
+            <p class="menu_footer">Commander</p>
+
+            <p class="titre_menu_footer">Contact</p>
+
+            <p class="menu_footer">Prendre RDV</p>
 
 
-        <p class="menu_footer">Téléchargez UberEats</p>
-        <button class="button_footer">GOOGLE PLAY</button>
-        <button class="button_footer">APPLE STORE</button>
-        <p class="droits">Tous droits réservés @jadoo.com</p>
-    </footer>
-</body>
+            <p class="menu_footer">Téléchargez UberEats</p>
+            <button class="button_footer">GOOGLE PLAY</button>
+            <button class="button_footer">APPLE STORE</button>
+            <p class="droits">Tous droits réservés @jadoo.com</p>
+        </footer>
+    </body>
 </html>
