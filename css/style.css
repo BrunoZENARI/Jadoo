@@ -1,29 +1,39 @@
 @import url(/css/fonts.css);
 
 body{
-    margin: 1px;   
-    padding: 1px; 
+    margin: 0px;   
+    padding: 0px; 
+}
+
+section{
+    position: static;
 }
 
 header{
     padding-left: 150px;
-    width: 100%;
     height: 73px;
 }
 
-.conteneur-menu{
+.head-menu{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     background-color: #FFFFFF;
-    height: 73px;
-    justify-content: space-around;
-    border: 2px solid #000000;
-    position: ;
-    align-self: flex-start;
+    align-self: center;
+    border: 2px solid purple;
+}
+
+.conteneur-menu{
+    justify-content: space-between;
+    border: 1px solid orangered;
+    align-self: center;
+    
     
 }
 
 .element-menu{
+    align-self: center;
     border: 1px solid blue;
 }
 
@@ -35,12 +45,17 @@ header{
     width: 95px;
 }
 
+.menu{
+    align-self: center;
+    border: 1px solid yellow;
+}
+
 .principale{
     background-image: url(/img/illustration_principale.jpg);
     background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 864px;
+    height: 800px;
     justify-content: space-evenly;
     border: 1px solid red;
 }
@@ -55,10 +70,142 @@ header{
     border: 1px solid blue;
 }
 
+.conteneur-second-section{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+    border: 1px solid orangered;
+}
 
+.element-second-section{
+    text-align: center;
+}
 
-section{
-    position: static;
+.decor{
+    background-image: url(/img/decor_1.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 50px;
+}
+
+.plat{    
+    width: 320px;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+    
+}
+
+.plat img{
+    border-top-left-radius: 8%;
+    border-top-right-radius: 8%;
+    
+}
+
+.descriptif{
+    background-image: url(/img/decoration_filet.svg);
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 1285px 130px;
+    font-family: 'Poppins-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 141%;
+    color: #5E6282;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 188px;
+    padding-right: 188px;
+}
+
+.maki{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-evenly;
+    border: 1px solid red;
+}
+
+.element-maki{
+    width: 250px;
+    background-color: white;
+    border-radius: 8%;
+    height: 314px;
+    border: 1px solid blueviolet;
+
+}
+
+.descriptif_bold{
+    font-family: 'Poppins-bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1E1D4C;
+    
+}
+
+.chef{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 450px;
+    background-image: url(/img/illustration_chef.jpg);
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 138%;
+}
+
+.inchef{
+    padding-left: 150px;
+}
+
+.video{
+    background-image: url(/img/visu_video.jpg);
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    width: 305px;
+    border-radius: 15px;
+}
+
+.photo-illustration{
+    position: absolute;
+    display: inline-block;
+    flex-direction: row;
+    height: 652px;
+    width: 100%;
+    z-index: 1;
+    top: 3331px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid blueviolet;
+}
+
+.illustration{
+    
+    width: 1500px;
+    height: 100%;
+    border: 1px solid rgb(187, 28, 115);
+}
+
+.commande{
+    background-image: url(/img/illustration_commander.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 150px;
+    padding-top: 426px;
+    padding-bottom: 200px;
+}
+
+.commandez{
+    width: 395px;
 }
 
 a{
@@ -106,17 +253,30 @@ li.marker{
     border-radius: 10px;
 }
 
+.boutton-jaune2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #F1A501;
+    width: 204px;
+    height: 60px;
+    border-radius: 10px;
+    align-self: center;
+}
+    
+
 h1{
     font-family: 'Volkhov-bold';
     font-style: normal;
     font-weight: 700;
     font-size: 84px;
     line-height: 89px;
-    letter-spacing: -0.04em;
+    letter-spacing: -4%;
     color: #FFFFFF;
-    width: 520px;
-    line-height: 1.2em;
-    letter-spacing: -0.04em;
+    width: 574px;
 }
 
 h2{
@@ -166,28 +326,8 @@ h6{
     font-size: 16px;
     line-height: 0px;
     color: #5E6282;
-    margin-left: 50px;
-}
-
-.descriptif{
-    font-family: 'Poppins-regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 2em;
-    color: #5E6282;
-    margin-left: 50px;
-}
-
-.descriptif_bold{
-    font-family: 'Poppins-bold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 0px;
-    color: #1E1D4C;
-    margin-left: 50px;
-    
+    display: inline;
+    flex-wrap: wrap;
 }
 
 #order{
@@ -210,7 +350,6 @@ span{
     font-size: 16px;
     line-height: 124.5%;
     color: #22232C;
-    margin-left: 50px;
 }
 
 .sous_marque{
@@ -221,7 +360,6 @@ span{
     font-size: 16px;
     line-height: 124.5%;
     color: #3E3F43;
-    margin-left: 50px;
 }
 
 .sous_livraison{
@@ -231,7 +369,6 @@ span{
     font-size: 16px;
     line-height: 124.5%;
     color: #3E3F43;
-    margin-left: 50px;
 }
 
 .rdv{
@@ -314,24 +451,4 @@ span{
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-}
-
-.chef{
-    background-image: url(/img/illustration_chef.jpg);
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-size: 138%;
-    
-}
-
-.inchef{
-    padding-bottom: 500px;
-}
-
-.video{
-    background-image: url(/img/visu_video.jpg);
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    width: 305px;
-    border-radius: 15px;
 }
