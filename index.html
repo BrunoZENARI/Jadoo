@@ -14,26 +14,38 @@
                 <img src="/img/logo_jadoo_2.svg" alt="logo" class="element-menu" id="logo2">
             </div>     
             <nav class="menu">
-                <a href="#page2">Les nouveautés</a>
-                <a href="#page3">Découvrir</a>
-                <a href="#page4">Commander</a>
-                <a href="#page5">Contactez-nous</a>
+                <a href="#Les nouveautés">Les nouveautés</a>
+                <a href="#Découvrir">Découvrir</a>
+                <a href="#Commander">Commander</a>
+                <a href="#Contactez-nous">Contactez-nous</a>
             </nav>
         </header>
 
+        <div id="scrollUp">
+            <a href="#top"><img src="/img/button_play.svg"/></a>
+        </div>
+
         <section class="principale">    
             <div class="conteneur-principale">
-                    <p class="p3 element-principale">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
-                    <h1 class="element-principale">Bienvenue<br> au restaurant Jadoo</h1>
-                    <p class="petit_p element-principale">Jadoo vous accueille dans son ambiance zen et épurée,<br> idéale pour découvrir ou redécouvrir la cuisine<br> gastronomique du Chef Junichi IIDA.</p>
-                    <button class="boutton-jaune">Découvrir la carte</button>
+                    <div class="element-principale">
+                        <p class="p3 ">UN VOYAGE CULINAIRE GOURMET ET GOURMAND.</p>
+                    </div>
+                    <div class="element-principale">
+                        <h1>Bienvenue<br> au restaurant Jadoo</h1>
+                    </div>
+                    <div class="element-principale">
+                        <p class="petit_p">Jadoo vous accueille dans son ambiance zen et épurée,<br> idéale pour découvrir ou redécouvrir la cuisine<br> gastronomique du Chef Junichi IIDA.</p>
+                    </div>
+                    <div class="element-principale">
+                        <button class="boutton-jaune">Découvrir la carte</button>
+                    </div>                    
             </div>
         </section>
 
         <section>
             <div class="conteneur-second-section">
                 <div class="decor element-second-section">
-                    <h4>DÉCOUVREZ</h4>
+                    <h4 id="Les nouveautés">DÉCOUVREZ</h4>
                     <h2>Les nouveautés Jadoo</h2>
                 </div>
                 <div class="element-second-section descriptif">
@@ -76,29 +88,30 @@
             </div>
         </section>
 
-        <section class="chef">
-            <div class="inchef">
+        <section class="container-chef">
+            <div class="element-chef">
                 <img class="video" src="/img/visu_video.jpg" alt="video">
+            </div>
+            <div class="element-chef" id="Découvrir">
                 <h1>Un voyage gastronomique entre le Japon et la France...</h1>
+            </div>
+            <div class="element-chef">
                 <h5 >Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</h5>
-                
             </div>
         </section>
-        <!-- <section class="photo-illustration illustration">
+        <section class="photo-illustration">
             <div>
                 <figure>
                     <img src="/img/wrapper_illustration_1.jpg" alt="bol-baguettes">
-                </figure>
-                <figure>
                     <img src="/img/wrapper_illustration_2.jpg" alt="salon-asiatique">
                 </figure>
             </div>
-        </section> -->
+        </section>
 
         <section class="commande">
             <div class="commandez">
                 <div class="element-commandez">
-                    <h3>RAPIDE ET PRATIQUE</h3>
+                    <h3 id="Commander">RAPIDE ET PRATIQUE</h3>
                 </div>
                 <div class="element-commandez">
                     <h2 id="order"><span>Commandez</span> sur le site Jadoo</h2>
@@ -129,56 +142,75 @@
         </section>
 
         <section>
-            <div>
-                <p class="rdv">PRENDRE RENDEZ-VOUS</p>
-                <p class="contact">Contactez-nous pour réserver au restaurant</p>
-                <p class="formulaire">Formulaire de contact</p>
-                <p class="consigne_formulaire">Remplissez le formulaire ci-dessous pour nous contacter</p>
-                <div class="champ">
-                    <label for="Nom" >Nom</label> 
-                    <input type="texte" id="Nom" placeholder="Nom">
-                </div>
+            <div class="container-contact">
+                <p class="rdv element-contact">PRENDRE RENDEZ-VOUS</p>
+                <p class="contact element-contact" id="Contactez-nous">Contactez-nous<br> pour réserver au restaurant</p>
+                <div class="container-formulaire element-contact">
+                    <div class="element-formulaire">
+                        <p class="formulaire">Formulaire de contact</p>
+                        <p class="consigne_formulaire">Remplissez le formulaire ci-dessous pour nous contacter</p>
+                        <div class="champ">
+                            <label for="Nom" >Nom</label> 
+                            <input type="texte" id="Nom" placeholder="Nom">
+                        </div>
 
-                <form method="post" action="form.php">
-                    <div class="champ">
-                        <label for="Prenom">Prénom</label> 
-                        <input type="texte" id="Prenom" placeholder="Prénom">
+                        <form method="post" action="form.php">
+                            <div class="champ">
+                                <label for="Prenom">Prénom</label> 
+                                <input type="texte" id="Prenom" placeholder="Prénom">
+                            </div>
+                            <div class="champ">
+                                <label for="mail">Adresse e-mail</label>
+                                <input type="email" id="mail" placeholder="Monadressemail@gmail.com">
+                            </div>
+                            <div class="champ">
+                                <label for="Message">Message</label> 
+                                <input type="textarea" id="Message" placeholder="Votre message / Demande de réservation">
+                            </div>
+                            <div class="champ">
+                                <input type="submit" value="Envoyer">
+                            </div>                        
+                        </form>
                     </div>
-                    <div class="champ">
-                        <label for="mail">Adresse e-mail</label>
-                        <input type="email" id="mail" placeholder="Monadressemail@gmail.com">
+                    <div>
+                        <img src="/img/illustration_formulaire.jpg" alt="buffet">
                     </div>
-                    <div class="champ">
-                        <label for="Message">Message</label> 
-                        <input type="textarea" id="Message" placeholder="Votre message / Demande de réservation">
-                    </div>
-                    <div class="champ">
-                        <input type="submit" value="Envoyer">
-                    </div>
-                </form>
+                </div>
+                
             </div>
         </section>
 
         <footer>
-            <p><img src="./img/">Jadoo</p>
-            <p class="menu_footer">Un voyage gastronomique entre le Japon et la France</p>
+            <div class="container-footer">
+                <div class="element-footer">
+                    <p>
+                        <img src="/img/logo_jadoo_1.svg" width="55px">
+                        &ensp;
+                        <img src="/img/logo_jadoo_2.svg" width="137px"></p>
+                    <p class="menu_footer">Un voyage gastronomique entre le Japon et la France</p>
+                </div>
+                <div class="element-footer">
+                    <p class="titre_menu_footer">Restaurant</p>
+                    <p class="menu_footer">Nouveautés</p>
+                    <p class="menu_footer">Découvrir</p>
+                    <p class="menu_footer">Commander</p>
+                </div>
+                <div class="element-footer">
+                    <p class="titre_menu_footer">Contact</p>
+                    <p class="menu_footer">Prendre RDV</p>
+                </div>
+                <div class="element-footer">
+                    <div class="uber">
+                        <img src="/img/logo_uberEats_2.svg" alt="uber">
+                        <p class="menu_footer">Téléchargez UberEats</p>
+                        <div class="button_footer">
+                            <button id="google">GOOGLE PLAY</button>
+                            <button id="apple">APPLE STORE</button>
+                        </div>                        
+                    </div>
+                </div>
 
-            <p class="titre_menu_footer">Restaurant</p>
-
-            <p class="menu_footer">Nouveautés</p>
-
-            <p class="menu_footer">Découvrir</p>
-
-            <p class="menu_footer">Commander</p>
-
-            <p class="titre_menu_footer">Contact</p>
-
-            <p class="menu_footer">Prendre RDV</p>
-
-
-            <p class="menu_footer">Téléchargez UberEats</p>
-            <button class="button_footer">GOOGLE PLAY</button>
-            <button class="button_footer">APPLE STORE</button>
+            </div>    
             <p class="droits">Tous droits réservés @jadoo.com</p>
         </footer>
     </body>
