@@ -14,17 +14,20 @@ header{
     padding-left: 150px;
     height: 73px;
     position: sticky;
+    z-index: 5;
 }
 
 #scrollUp{
 position: fixed;
 right: 10px;
 bottom : 10px;
-opacity: 0.8;
-rotate: -90deg;
+opacity: 0.6;
 z-index: 2;
 }
-
+#scrollUp img{
+    border-radius: 25px;
+    width: 50px;
+}
 .head-menu{
     display: flex;
     flex-direction: row;
