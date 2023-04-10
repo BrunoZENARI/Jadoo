@@ -56,7 +56,8 @@ z-index: 2;
     margin-right: 20px;
 }
 
-#logo1:hover{
+
+#logo1:hover, #logo3:hover{
     animation-name: rotation;
     animation-duration: 300ms;
     animation-iteration-count: infinite;
@@ -76,6 +77,10 @@ z-index: 2;
 
 #logo2{
     width: 95px;
+}
+
+#logo3{
+    width: 55px;
 }
 
 .menu{
@@ -177,7 +182,8 @@ z-index: 2;
     color: #5E6282;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
     padding-left: 188px;
     padding-right: 188px;
 }
@@ -187,17 +193,46 @@ z-index: 2;
     flex-direction: row;
     align-items: center;
     padding: 100px;
-    justify-content: space-evenly;
+    justify-content: center;
     /* border: 1px solid red; */
 }
 
 .element-maki{
+    z-index: 2;
     width: 250px;
     background-color: white;
     border-radius: 8%;
     height: 314px;
-    /* border: 1px solid blueviolet; */
+    gap: 1px;
+}
 
+.element-maki:hover{
+    z-index: 5;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+    animation: rose;
+}
+
+.rose{
+    z-index: 0;
+    opacity: 0;
+    
+}
+
+.rose:hover{    
+    animation-name:;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0.1s;
+}
+
+@keyframes rose {
+    from { opacity: 1; z-index: 1;
+    }
+    to {
+        rotate: 22.5deg;
+        opacity: 1;
+        z-index: 1;
+    }
 }
 
 .descriptif_bold{
@@ -304,20 +339,76 @@ figure :last-child{
     box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     
+    
 }
 
 .element-formulaire{
     width: 486px;
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
-    padding-left: 53px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 5px;
+}
+
+.placement-formulaire{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin: 0px;
+    /* border: 1px solid purple; */
 }
 
 .element-contact img{
     width: 532px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+
+::placeholder{
+    text-underline-position:below;
+}
+
+.nom-prenom{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.nom, .prenom{
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+}
+
+.button-envoyer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#envoyer:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#envoyer{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 152px;
+    height: 48px;
+    background-color: #007AFF;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    border: none;
 }
 
 a{
@@ -356,6 +447,14 @@ li.marker{
     box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
 }
 
+
+.boutton-jaune:hover, .boutton-jaune2:hover{
+    transition-duration: 0.2s;
+    transform: scale(1.05);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .boutton-jaune2{
     font-family: 'Arial';
     font-style: normal;
@@ -364,11 +463,14 @@ li.marker{
     line-height: 21px;
     color: #FFFFFF;
     background-color: #F1A501;
+    box-shadow: 0px 20px 35px 5px rgba(241, 165, 1, 0.15);
+    border: none;
     width: 204px;
     height: 60px;
     border-radius: 10px;
     align-self: center;
 }
+
     
 
 h1{
@@ -504,6 +606,7 @@ span{
 }
 
 .consigne_formulaire{
+    width: 256px;
     font-family: 'Poppins-regular';
     font-style: normal;
     font-weight: 400;

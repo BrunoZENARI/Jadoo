@@ -69,7 +69,8 @@
                         <div class="element-maki">
                             <img src="/img/maki_1.png" alt="California Tobiko">
                             <p class="descriptif_bold">California Tobiko</p>
-                            <h6>Saumon, thon, mayonnaise</h6> 
+                            <h6>Saumon, thon, mayonnaise</h6>
+                            <img src="/img/decoration_rose.svg" alt="rose" class="rose">
                         </div>
                         <div class="element-maki">
                             <img src="/img/maki_2.png" alt="California Rolls">    
@@ -150,30 +151,32 @@
                     <p class="contact element-contact" id="Contactez-nous">Contactez-nous<br> pour réserver au restaurant</p>
                     <div class="container-formulaire element-contact">
                         <div class="element-formulaire">
-                            <p class="formulaire">Formulaire de contact</p>
-                            <p class="consigne_formulaire">Remplissez le formulaire ci-dessous pour nous contacter</p>
-                            <div class="champ">
-                                <label for="Nom" >Nom</label> 
-                                <input type="texte" id="Nom" placeholder="Nom">
-                            </div>
-
-                            <form method="post" action="form.php">
-                                <div class="champ">
-                                    <label for="Prenom">Prénom</label> 
-                                    <input type="texte" id="Prenom" placeholder="Prénom">
+                            <p class="formulaire placement-formulaire">Formulaire de contact</p>
+                            <p class="consigne_formulaire placement-formulaire">Remplissez le formulaire ci-dessous pour nous contacter</p>
+                            
+                                <div class="champ placement-formulaire nom-prenom">
+                                    <div class="nom">
+                                        <label for="Nom" >Nom</label>
+                                        <input type="texte" id="Nom" placeholder="Nom" style="border: 0;">
+                                    </div>                                                  
+                                    <div class="prenom">
+                                        <label for="Prenom">Prénom</label> 
+                                        <input type="texte" id="Prenom" placeholder="Prénom" style="border: 0;">
+                                    </div>
                                 </div>
-                                <div class="champ">
+                                
+                                <div class="champ placement-formulaire">
                                     <label for="mail">Adresse e-mail</label>
-                                    <input type="email" id="mail" placeholder="Monadressemail@gmail.com">
+                                    <input type="email" id="Mail" placeholder="monadressemail@gmail.com" style="border: 0;">
                                 </div>
-                                <div class="champ">
-                                    <label for="Message">Message</label> 
-                                    <input type="textarea" id="Message" placeholder="Votre message / Demande de réservation">
+                                <div class="champ placement-formulaire">
+                                    <label for="Message">Message</label>
+                                    <input type="textarea" id="Message" placeholder="Votre message / Demande de réservation" style="border: 0;">
                                 </div>
-                                <div class="champ">
-                                    <input type="submit" value="Envoyer">
+                                <div class="champ placement-formulaire button-envoyer">
+                                    <input type="submit" value="&#10003 Envoyer" id="envoyer">
                                 </div>                        
-                            </form>
+                            
                         </div>
                         <div>
                             <img src="/img/illustration_formulaire.jpg" alt="buffet">
@@ -188,9 +191,10 @@
             <div class="container-footer">
                 <div class="element-footer">
                     <p>
-                        <img src="/img/logo_jadoo_1.svg" width="55px">
+                        <img src="/img/logo_jadoo_1.svg" id="logo3">
                         &ensp;
-                        <img src="/img/logo_jadoo_2.svg" width="137px"></p>
+                        <img src="/img/logo_jadoo_2.svg" width="137px">
+                    </p>
                     <p class="menu_footer">Un voyage gastronomique entre le Japon et la France</p>
                 </div>
                 <div class="element-footer">
