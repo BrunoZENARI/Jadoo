@@ -11,11 +11,25 @@ body{
 }
 
 header{
+    position: absolute;
     padding-left: 150px;
     height: 73px;
     position: sticky;
     top: 0;
-    z-index: 9;
+    background-color: #fff;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toogle{
+    display: none;
+    color: #000000;
 }
 
 #scrollUp{
@@ -98,6 +112,14 @@ z-index: 2;
 
 .menu a:hover{
     text-decoration: underline;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 50px;
+    /* border: 1px solid purple; */
 }
 
 .principale{
@@ -733,9 +755,30 @@ figure{
 
 @media screen and (max-width: 450px) {
     body, header, main, section, footer{ margin: 0; padding: 0;}
-    header{}
+    header{ background: transparent;}
     .conteneur-principale{padding-left: 0px; padding-top: 10px;}
     .element-principale{width: 100%; text-align: center;}
     .element-principale h1{ font-size: 51px;}
     .boutton-jaune{align-self: center;}
+    .toogle{display: block; font-size: 2rem; cursor: pointer; position: relative; z-index: 20;}
+    .ouvrir{display: block;}
+    .fermer{display: none;}
+    .open .ouvrir{display: none;}
+    .open .fermer{display: block;}
+    .navi{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    .open .navi{
+        transform: translateX(0);
+    }
 }
