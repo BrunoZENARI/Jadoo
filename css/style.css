@@ -135,6 +135,12 @@ z-index: 2;
     /* border: 1px solid blue; */
 }
 
+.element-principale h1{
+    background-image: url(/img/souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 8px left;
+}
+
 .conteneur-second-section{
     display: flex;
     flex-direction: column;
@@ -215,7 +221,6 @@ z-index: 2;
 .rose{
     z-index: 0;
     opacity: 0;
-    
 }
 
 .rose:hover{    
@@ -281,6 +286,13 @@ figure :last-child{
     height: 650px;
     width: 100%;
     top: 3300px;  
+}
+
+.element-chef h1{
+    background-image: url(/img/souligne_rose.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 70px;
 }
 
 .commande{
@@ -717,4 +729,13 @@ footer{
 
 figure{
 
+}
+
+@media screen and (max-width: 450px) {
+    body, header, main, section, footer{ margin: 0; padding: 0;}
+    header{}
+    .conteneur-principale{padding-left: 0px; padding-top: 10px;}
+    .element-principale{width: 100%; text-align: center;}
+    .element-principale h1{ font-size: 51px;}
+    .boutton-jaune{align-self: center;}
 }
