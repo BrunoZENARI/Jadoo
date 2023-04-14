@@ -1,6 +1,10 @@
-let toogle = document.querySelector('.toogle');
+let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 
-toogle.addEventListener('click', function() {
-    body.classList.toggle('open')
-})
+toggle.addEventListener(
+    'click', function() {
+    body.classList.toggle('open');
+    }
+)
+
+

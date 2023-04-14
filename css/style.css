@@ -10,20 +10,13 @@ body{
     
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header{
-    position: absolute;
+    z-index: 20;
     padding-left: 150px;
     height: 73px;
     position: sticky;
     top: 0;
     background-color: #fff;
-    color: #000000;
 }
 
 nav{
@@ -34,9 +27,19 @@ nav{
     align-items: center;
 }
 
-.toogle{
+.toggle{
     display: none;
     width: 50px;
+}
+
+.ouvrir{
+    width: 50px;
+    height: 50px;
+}
+
+.fermer{
+    width: 60px;
+    height: 50px;
 }
 
 #scrollUp{
@@ -229,45 +232,57 @@ ul{
     align-items: center;
     padding: 100px;
     justify-content: center;
-    /* border: 1px solid red; */
+    gap: 5px;
+    
 }
 
 .element-maki{
+    position: relative;
+    background-color: #00000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
-    width: 250px;
-    background-color: white;
+    width: 302px;
     border-radius: 8%;
-    height: 314px;
-    gap: 1px;
+    height: 347px;
 }
 
-.element-maki:hover{
-    z-index: 5;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
-    animation: rose;
-}
-
-.rose{
-    z-index: 0;
+.element-maki::before{
+    z-index: 9;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    bottom: -25px;
+    left: -25px;
     opacity: 0;
+    background: url(/img/decoration_rose.svg) no-repeat;
+    background-size: cover;
+    transform: rotate(-45deg);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 0s;
 }
 
-.rose:hover{    
-    animation-name:;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0.1s;
+.element-maki:hover::before{
+    z-index: -1;
+    opacity: 1;
+    transform: rotate(0deg);
+
 }
 
-@keyframes rose {
-    from { opacity: 1; z-index: 1;
-    }
-    to {
-        rotate: 22.5deg;
-        opacity: 1;
-        z-index: 1;
-    }
+.photo-maki{
+    width: 267px;
+    height: 314px;
+    border-radius: 8%;
+    background-color: #FFFFFF;
 }
+
+.photo-maki:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
 
 .descriptif_bold{
     font-family: 'Poppins-bold';
@@ -369,8 +384,9 @@ figure :last-child{
     /* border: 1px solid red; */
 }
 
-.element-contact{
-    
+form{
+    margin: 0;
+    padding: 0;    
 }
 
 .container-formulaire{
@@ -378,28 +394,32 @@ figure :last-child{
     flex-direction: row;
     width: 1018px;
     box-shadow: 0px 4px 61px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    
-    
+    border-radius: 30px; 
 }
 
-.element-formulaire{
+.remplir-contact{
     width: 486px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    gap: 5px;
+    gap: 20px;
 }
 
 .placement-formulaire{
     display: flex;
     flex-direction: column;
-    align-content: space-around;
     margin: 0px;
-    /* border: 1px solid purple; */
+    gap: 20px;
+}
+
+.element-formulaire{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .element-contact img{
@@ -408,8 +428,14 @@ figure :last-child{
     border-bottom-right-radius: 30px;
 }
 
-::placeholder{
-    text-underline-position:below;
+input{
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+input:focus{
+    outline:none;
+    border-bottom: 1.5px solid #007AFF;
 }
 
 .nom-prenom{
@@ -644,6 +670,7 @@ span{
     font-size: 20px;
     line-height: 28px;
     color: #000000;
+
 }
 
 .consigne_formulaire{
@@ -694,9 +721,17 @@ span{
     color: #080809;
 }
 
+.uber{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+}
+
 .button_footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 250px;
     height: 35px;
     /* border: #000000 1px solid; */
@@ -713,7 +748,11 @@ span{
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    
+}
+
+#google:hover{
+    cursor: pointer;
+    scale: 1.1;
 }
 
 #apple{
@@ -729,9 +768,15 @@ span{
     align-items: center;
 }
 
+#apple:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
 footer{
     background-color: #F3F3F3;
 }
+
 .container-footer{
     display: flex;
     flex-direction: row;
@@ -750,50 +795,90 @@ footer{
     /* border:#DF6951 1px solid; */
 }
 
-.uber{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-figure{
-
-}
-
-.ouvrir{
-    color: #000;
-}
-
-.fermer{
-    width: 60px;
-    height: 50px;
-}
-
 @media screen  and (max-width: 991px) {
-    body, header, main, section, footer{margin: 0; padding: 0;}
-    header{ background: transparent;}
-    .principale{background-image: url(/img/illustration_principale_small.jpg); height: auto; padding: 40px 0;}
-    .conteneur-principale{padding-left: 0px; padding-top: 10px;}
-    .element-principale{width: 100%; text-align: center; justify-content: center;}
-    .element-principale h1{font-size: 51px;}
-    .container-chef{background-image: url(/img/illustration_chef_small.jpg) ;}
-    .boutton-jaune{align-self: center;}
-    .toogle{display: block; font-size: 2rem; cursor: pointer; position: relative; z-index: 20; }
-    .ouvrir{display: block;}
-    .fermer{display: none;}
-    .open .ouvrir{display: none;}
-    .open .fermer{display: block;}
+    body, header, main, section, footer{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        padding-left: 10px;
+    }
+
+    .menu{
+        margin: 0 15px 0 0;
+    }
+
+    button{
+        transform: scale(1.2);
+    }
+    
+    .principale{
+        background-image: url(/img/illustration_principale_small.jpg); 
+        height: auto; 
+        padding: 40px 0;
+    }
+
+    .conteneur-principale{
+        padding-left: 0px; 
+        padding-top: 10px;
+    }
+
+    .element-principale{
+        width: 100%; 
+        text-align: center; 
+        justify-content: center;
+    }
+
+    .element-principale h1{
+        font-size: 51px;
+    }
+
+    .container-chef{
+        background-image: url(/img/illustration_chef_small.jpg);
+    }
+
+    .boutton-jaune{
+        align-self: center;
+    }
+
+    .toggle{
+        display: flex; 
+        font-size: 2rem;
+        flex-direction: row-reverse;
+        justify-self: end; 
+        cursor: pointer; 
+        position: relative; 
+        z-index: 20; 
+    }
+
+    .ouvrir{
+        display: block;
+    }
+
+    .fermer{
+        display: none;
+    }
+
+    .open .ouvrir{
+        display: none;
+    }
+
+    .open .fermer{
+        display: block;
+    }
+
     .navi{
         position: absolute;
-        top: 0;
+        top: -16px;
         left: 0;
         width: 100%;
         height: 50vh;
-        background-color: #000000;
+        background-color: #FFFFFF;
         flex-direction: column;
         padding: 2rem;
         justify-content: space-around;
-        transform: translateX(-100%);
+        transform: translateY(-100%);
         transition: transform 1s;
     }
 
@@ -801,9 +886,121 @@ figure{
         transform: translateX(0);
     }
 
-    .open .navi ul li a{
-        color: #FFFFFF;
+    .plat{
+        animation-name: translatePlat;
+        animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes translatePlat{
+        0%{transform: translate(-375px,0);}
+        50%{transform: translate(0,0);}
+        100%{transform: translate(+375px,0);}
+    }
+
+    .conteneur-second-section{
+        padding: 100px 0;
+    }
+
+    .descriptif{
+        padding: 100px 0;
+    }
+
+    .maki{
+        flex-direction: column;
+        margin: 0;
+        padding: 0 0 40px 0;
+    }
+
+    .element-maki{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .photo-maki{
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 30px 0;
+        border-radius: none;
+    }
+
+    .photo-maki img{
+        width: 91px;
+        height: 82px;
+    }
+
+    .photo-maki:hover{
+        box-shadow: 0;
+    }
+
+    .element-maki::before{
+        display: none;
+    }
+
+    .container-chef{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .video{
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .photo-illustration{
+        display:contents;
+        width: 100%;
+    }
+
+    .element-chef{
+        width: 100%;
+    }
+
+    .element-chef h1{
+        width: 100%;
+        font-size: 51px;
+    }
+
+    .element-chef h5{
+        width: 100%;
+    }
+
+    .commande{
+        margin: 0;
+        padding: 0 0 40px 0;
+        background-image: none;
+        width: 100%;
+    }
+
+    .commandez{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .element-commandez{
+        justify-content: center;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    #order{
+        align-self: center;
+    }
+
+    .commande button{
+        align-self: center;
     }
 
 
+
 }
+
