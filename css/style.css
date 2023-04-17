@@ -1001,6 +1001,11 @@ footer{
         align-self: center;
     }
 
+    .placement-formulaire{
+        width: 315px;
+        gap: 30px;;
+    }
+
     .contact{
         width: 100%;
     }
@@ -1014,9 +1019,34 @@ footer{
         align-items: center;
     }
 
+    .consigne_formulaire{
+        text-align: center;
+    }
+
     .remplir-contact{
         align-content: center;
         align-items: center;
+    }
+
+    .nom, .prenom{
+        width: 315px;
+    }
+
+    .nom-prenom{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .champ{
+        font-weight: 900;
+    }
+
+    .formulaire{
+        display: none;
+    }
+
+    .element-formulaire{
+        height: auto;
     }
 
     #buffet{
@@ -1030,4 +1060,3 @@ footer{
     }
 
 }
-
