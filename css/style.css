@@ -7,7 +7,6 @@ html{
 body{
     margin: 0px;   
     padding: 0px;
-    
 }
 
 header{
@@ -49,10 +48,12 @@ bottom : 10px;
 opacity: 0.6;
 z-index: 2;
 }
+
 #scrollUp img{
     border-radius: 25px;
     width: 50px;
 }
+
 .head-menu{
     display: flex;
     flex-direction: row;
@@ -60,19 +61,15 @@ z-index: 2;
     justify-content: space-between;
     background-color: #FFFFFF;
     align-self: center;
-    /* border: 2px solid purple; */
 }
 
 .conteneur-menu{
     justify-content: space-between;
     align-self: center;
-    /* border: 1px solid orangered; */
-    
 }
 
 .element-menu{
     align-self: center;
-    /* border: 1px solid blue; */
 }
 
 #logo1{
@@ -112,7 +109,6 @@ z-index: 2;
     margin-right: 150px;
     display: flex;
     gap: 50px;
-    /* border: 1px solid yellow; */
 }
 
 .menu a{
@@ -129,7 +125,6 @@ ul{
     flex-direction: row;
     list-style-type: none;
     gap: 50px;
-    /* border: 1px solid purple; */
 }
 
 .principale{
@@ -139,15 +134,13 @@ ul{
     background-size: cover;
     height: 800px;
     justify-content: space-evenly;
-    /* border: 1px solid red; */
 }
+
 .conteneur-principale{
     display: flex;
     flex-direction: column;
-    
     padding-top: 100px;
     padding-left: 150px;
-    /* border: 1px solid orange; */
 }
 
 .p3{
@@ -164,7 +157,6 @@ ul{
 .element-principale{
     margin: 0;
     display: flex;
-    /* border: 1px solid blue; */
 }
 
 .element-principale h1{
@@ -178,7 +170,6 @@ ul{
     flex-direction: column;
     background-color: white;
     padding-bottom: 100px;
-    /* border: 1px solid orangered; */
 }
 
 .element-second-section{
@@ -232,8 +223,7 @@ ul{
     align-items: center;
     padding: 100px;
     justify-content: center;
-    gap: 5px;
-    
+    gap: 5px; 
 }
 
 .element-maki{
@@ -269,7 +259,6 @@ ul{
     z-index: -1;
     opacity: 1;
     transform: rotate(0deg);
-
 }
 
 .photo-maki{
@@ -291,7 +280,6 @@ ul{
     font-size: 20px;
     line-height: 27px;
     color: #1E1D4C;
-    
 }
 
 .container-chef{
@@ -353,7 +341,6 @@ figure :last-child{
     display: flex;
     flex-direction: column;
     width: 395px;
-    
 }
 
 .element-commandez{
@@ -381,7 +368,6 @@ figure :last-child{
     align-items: center;
     background-color: white;
     padding-bottom: 100px;
-    /* border: 1px solid red; */
 }
 
 form{
@@ -419,7 +405,6 @@ form{
     height: 60px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .element-contact img{
@@ -587,7 +572,6 @@ h5{
     line-height: 30px;
     color: #FFFFFF;
     width: 450px;
-    
 }
 
 h6{
@@ -670,7 +654,6 @@ span{
     font-size: 20px;
     line-height: 28px;
     color: #000000;
-
 }
 
 .consigne_formulaire{
@@ -734,7 +717,6 @@ span{
     justify-content: space-between;
     width: 250px;
     height: 35px;
-    /* border: #000000 1px solid; */
 }
 
 #google{
@@ -783,8 +765,6 @@ footer{
     justify-content: space-evenly;
     padding: 80px 200px 50px 200px;
     gap: 20px;
-
-    /* border: 1px solid green; */
 }
 
 .element-footer{
@@ -792,7 +772,6 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* border:#DF6951 1px solid; */
 }
 
 @media screen  and (max-width: 991px) {
